@@ -1,0 +1,119 @@
+<!-- templates/chat.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Chatbot</title>
+    <style>
+        body {
+            background-color: #1f1f1f;
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+        }
+
+        .chat-box {
+            width: 100%;
+            max-width: 600px;
+            background-color: #2b2b2b;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            margin-bottom: 1.5rem;
+        }
+
+        .message {
+            margin-bottom: 1rem;
+        }
+
+        .user {
+            color: #00bcd4;
+            font-weight: bold;
+        }
+
+        .bot {
+            color: #9ccc65;
+            font-weight: bold;
+        }
+
+        form {
+            display: flex;
+            margin-top: 2rem;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 0.7rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            background-color: #3a3a3a;
+            color: #fff;
+        }
+
+        button {
+            padding: 0.7rem 1.2rem;
+            font-size: 1rem;
+            background-color: #00bcd4;
+            color: #fff;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0097a7;
+        }
+
+        /* Styling for the Back button */
+        .back-button {
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .back-button:hover {
+            background-color: #43a047;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chat with Food Donation AI</h1>
+
+    <div class="chat-box">
+        {% if user_message %}
+        <div class="message">
+            <span class="user">You:</span> {{ user_message }}
+        </div>
+        <div class="message">
+            <span class="bot">Bot:</span> {{ bot_response }}
+        </div>
+        {% else %}
+        <p>Ask me anything about food donations, locations, or how to contribute.</p>
+        {% endif %}
+
+        <form method="POST">
+            <input type="text" name="message" placeholder="Type your message here..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <!-- Back to Home button -->
+    <a href="/" class="back-button">🏠 Back to Home</a>
+
+</body>
+</html>
+

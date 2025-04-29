@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Donation Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <nav style="margin-bottom: 20px;">
+            <a href="/">🏠 Home</a> |
+            <a href="/chat">💬 Chat</a> |
+            <a href="/donate">🍽️ Donate</a>
+        </nav>
+
+        <h2>🍱 Available Food Donations</h2>
+
+        {% if donations %}
+            {% for donation in donations %}
+                <div class="chat-bubble bot">
+                    <p><strong>Type:</strong> {{ donation.food_type }}</p>
+                    <p><strong>Quantity:</strong> {{ donation.quantity }}</p>
+                    <p><strong>Pickup Time:</strong> {{ donation.pickup_time }}</p>
+                    <p><strong>Location:</strong> {{ donation.location }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="chat-bubble bot">
+                <p>No donations available yet.</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+

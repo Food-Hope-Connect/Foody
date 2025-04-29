@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donate Food</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <h2>🥘 Donate Food</h2>
+        <form method="POST" action="/donate" class="chat-form" style="flex-direction: column;">
+            <input type="text" name="food_type" placeholder="Food Type" required>
+            <input type="number" name="quantity" placeholder="Quantity" required>
+            <input type="text" name="pickup_time" placeholder="Pickup Time" required>
+            <input type="text" name="location" placeholder="Location" required>
+            <button type="submit">Submit Donation</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
