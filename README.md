@@ -1,6 +1,3 @@
-Here’s the full `README.md` code tailored to your updated project description, with a Vimeo video embedded and all the accurate project details:
-
-````markdown
 # 🍲 Foody by HopeConnect
 
 ## 👨‍👩‍👧‍👦 Team Members
@@ -21,13 +18,10 @@ The platform uses **location-based matchmaking** to efficiently pair users, ensu
 
 ## 🎥 Video Explanation
 
-<div align="center">
-  <iframe src="https://player.vimeo.com/video/YOUR_VIDEO_ID" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-</div>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1082215951?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="HopeConnect"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-> _Replace `YOUR_VIDEO_ID` with your actual Vimeo video ID._
 
-If the embed doesn’t work on some platforms (e.g. GitHub preview), [click here to watch the video on Vimeo](https://vimeo.com/YOUR_VIDEO_ID).
+If the embed doesn’t work on some platforms (e.g. GitHub preview), [click here to watch the video on Vimeo](https://vimeo.com/1082215951/da287824af?share=copy).
 
 ---
 
@@ -99,12 +93,3 @@ For any questions or feedback, reach out to any of the team members or open an i
 ---
 
 > *Together, let’s bridge the gap between excess and need.*
-
-```
-
-### Notes:
-- Replace `YOUR_VIDEO_ID` with the actual ID from your Vimeo URL (e.g., if your link is `https://vimeo.com/123456789`, then use `123456789`).
-- Embedding with `<iframe>` works on Markdown **preview-capable renderers** (like some docs platforms), but **GitHub ignores it**. So a plain link is also provided for fallback.
-
-Would you like this saved as a `.md` file for easy upload?
-```
