@@ -1,10 +1,10 @@
 # 🍲 Foody by HopeConnect
 
 ## 👨‍👩‍👧‍👦 Team Members
-- **Vanshika Dubey**
-- **Dev Bharadwaj**
-- **Rohan Rathee**
-- **Kasak Yadav**
+- **Vanshika Dubey** ~ 2401010067
+- **Dev Bharadwaj** ~ 2401010082
+- **Rohan Rathee** ~ 2401010144
+- **Kasak Yadav** ~ 2401010049
 
 ---
 
@@ -18,10 +18,8 @@ The platform uses **location-based matchmaking** to efficiently pair users, ensu
 
 ## 🎥 Video Explanation
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1082215951?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="HopeConnect"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-
-If the embed doesn’t work on some platforms (e.g. GitHub preview), [click here to watch the video on Vimeo](https://vimeo.com/1082215951/da287824af?share=copy).
+[Click here to watch the video on Vimeo](https://vimeo.com/1082215951/da287824af?share=copy).
 
 ---
 
@@ -29,7 +27,7 @@ If the embed doesn’t work on some platforms (e.g. GitHub preview), [click here
 
 - **Language:** Python
 - **Backend Framework:** Flask
-- **Database:** SQLite / MongoDB *(based on your implementation)*
+- **Database:** SQLite / MongoDB
 - **Frontend:** HTML, CSS, JavaScript
 - **Other Tools:** Geolocation APIs, Flask-SocketIO (for chat), Git & GitHub
 
